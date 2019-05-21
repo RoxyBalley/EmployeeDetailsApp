@@ -31,7 +31,7 @@ public class TVSActivity extends AppCompatActivity {
 
 		FragmentTransaction transaction =
 				getSupportFragmentManager().beginTransaction();
-		transaction.replace(R.id.login_fragment, loginFragment).addToBackStack(null);
+		transaction.replace(R.id.login_fragment, loginFragment);
 		transaction.commit();
 
 	}
@@ -63,9 +63,9 @@ public class TVSActivity extends AppCompatActivity {
 						.commit();
 				break;
 
-			case "chart":
+			case ConstantClass.BARCHART_SCREEN:
 				getSupportFragmentManager().beginTransaction()
-						.replace(R.id.login_fragment, barChartFragment, "chart")
+						.replace(R.id.login_fragment, barChartFragment, ConstantClass.BARCHART_SCREEN)
 						.addToBackStack(null)
 						.commit();
 				break;

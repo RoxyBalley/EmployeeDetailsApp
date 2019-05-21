@@ -25,9 +25,10 @@
                 android:layout_height="250dp"
                 android:layout_gravity="center"
                 android:background="@android:drawable/btn_default"
-                android:scaleType="fitXY" />
+                android:scaleType="centerCrop" />
 
             <TextView
+                android:id="@+id/desc_camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -37,9 +38,11 @@
                 android:id="@+id/camera_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_camera"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="15dp"
-                android:src="@drawable/camera" />
+                android:layout_marginEnd="15dp"
+                android:background="#FDFDFD"
+                android:src="@drawable/camera_icon" />
 
         </RelativeLayout>
 

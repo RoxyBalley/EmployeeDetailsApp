@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,8 +14,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.example.tvsapp.ConstantClass;
 import com.example.tvsapp.ListAdapter;
@@ -38,7 +37,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
 	private ArrayList<Userdetail> userdetailArrayList;
 	ArrayList<Userdetail> temp = new ArrayList<>();
 	private EditText searchField;
-	private Button chartButton;
+	private ImageButton chartButton;
 
 	private Context mContext;
 	private RecyclerItemClickListener recyclerItemClickListener =
@@ -158,7 +157,7 @@ public class ListFragment extends Fragment implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 		if(v.getId() == R.id.btnBarChart){
-			viewModel.gotoFragment("chart");
+			viewModel.gotoFragment(ConstantClass.BARCHART_SCREEN);
 
 		}
 	}

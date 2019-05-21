@@ -60,7 +60,7 @@ public class BarChartFragment extends Fragment {
 		XAxis xAxis = chart.getXAxis();
 		xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
 		xAxis.setDrawGridLines(false);
-		xAxis.setGranularity(1f); // only intervals of 1 day
+		xAxis.setGranularity(1f);
 		xAxis.setLabelCount(7);
 
 		YAxis leftAxis = chart.getAxisLeft();
@@ -83,11 +83,11 @@ public class BarChartFragment extends Fragment {
 		l.setXEntrySpace(4f);
 
 		ArrayList<BarEntry> values = new ArrayList<>();
-		ArrayList<Userdetail> userdetail = viewModel.getUserList();
+		ArrayList<Userdetail> userDetail = viewModel.getUserList();
 
 		for (int i = 0; i < 10; i++) {
 
-			values.add(new BarEntry(i + 1, Integer.valueOf(userdetail.get(i).getSalary()
+			values.add(new BarEntry(i + 1, Integer.valueOf(userDetail.get(i).getSalary()
 					.replace("$", "")
 					.replace(",", "")
 					.replace("\"", ""))));
