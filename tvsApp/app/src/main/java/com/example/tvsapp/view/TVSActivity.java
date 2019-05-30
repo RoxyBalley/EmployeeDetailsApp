@@ -17,11 +17,11 @@ public class TVSActivity extends AppCompatActivity {
 	private DetailFragment detailFragment;
 	private BarChartFragment barChartFragment;
 	private ViewModelTVS viewModel;
-
+	private int i = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
-		//test01
+		//test home branch
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tvs);
