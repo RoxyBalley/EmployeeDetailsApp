@@ -20,6 +20,9 @@ public class TVSActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+
+		//test01
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tvs);
 		loginFragment = new LoginFragment();
