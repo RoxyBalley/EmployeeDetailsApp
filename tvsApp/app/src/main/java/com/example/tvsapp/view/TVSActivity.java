@@ -17,7 +17,7 @@ public class TVSActivity extends AppCompatActivity {
 	private DetailFragment detailFragment;
 	private BarChartFragment barChartFragment;
 	private ViewModelTVS viewModel;
-	private int i = 0;
+	private int i = 0; //cherry picked
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
