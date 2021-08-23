@@ -1,5 +1,5 @@
-# assignment
- Employee details app Using MVVM architecture. User can login using username and password to view its name, role, location, id, date of joining and salary.
+# overview
+ An Employee details app Using MVVM architecture. User can login using username and password to view its name, role, location, id, date of joining and salary.
  TVS REST Api call using Retrofit.
  
  User can search with textwatcher using keyword by any field in user details e.g. salary, role, date etc.
